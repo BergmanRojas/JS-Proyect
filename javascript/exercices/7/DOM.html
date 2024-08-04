@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading"> Heading </h2>
+        <p id="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid, distinctio ipsa pariatur exercitationem voluptate illo accusamus in sint voluptas quia alias odit! Nesciunt expedita libero accusantium sed quibusdam magni!</p>
+
+        <p id="para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid, distinctio ipsa pariatur exercitationem voluptate illo accusamus in sint voluptas quia alias odit! Nesciunt expedita libero accusantium sed quibusdam magni!</p>
+
+        <script>
+            let varHeading = document.getElementById('heading').innerText;
+            let varPara1 = document.getElementById('para-1').innerText;
+            let varPara2 = document.getElementById('para-2').innerText;
+
+            varHeading = "My New  Really Fantastic Heading";
+
+            document.getElementById('heading').innerText = varHeading
+            
+            document.getElementById('heading').style.color = "Green";
+
+
+
+            console.log(varHeading);
+            console.log(varPara1);
+            console.log(varPara2);
+        </script>
+</body>
+</html>
