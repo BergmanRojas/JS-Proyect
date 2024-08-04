@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bergman Rojas | Home page</title>
+    <meta name="description" content="Welcome to my website that showcases some of my digital creations.">
+    
+    <meta name="google-site-verification" content="nt9Jx_dXiMyyQZan3raXpiwLgr9ZdhHJGvIVTUsKf34" />
+
+    <link rel="preload" href="assets/videos/hero-still.png" as="image">
+    
+    <link rel="stylesheet" href="/assets/CSS/global.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TX4WD48YHX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TX4WD48YHX');
+    </script>
+
+    <style>
+        /* ============= WEB BROWSER RESETS ============ */
+        * { margin: 0; padding: 0; border: none; }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline; scroll-behavior: smooth; scroll-padding-top: 20px; }
+        body { max-width: 1920px; line-height: 1.5; margin-left: auto; margin-right: auto; min-height: 100vh; text-rendering: optimizeSpeed; }
+        img { width: 100%; height: auto; display: block; }
+        input, button, textarea, select { font: inherit; }
+
+        /* ================= ENDS ================ */
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        @media (min-width: 1025px) { section { padding: 60px 4%; } }
+
+        .hero-block {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-bg-media {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero-bg-media video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background-image: linear-gradient(rgba(29, 38, 113, 0.7), rgba(195, 55, 100, 0.3));
+        }
+
+        .hero-text-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero-text-container h1,
+        .hero-text-container h2,
+        .hero-text-container h3 {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-block h1 {
+            font-size: calc(30px + (56 - 32) * ((100vw - 320px) / (1600 - 320)));
+            margin-bottom: 8px;
+        }
+
+        .hero-block h2 {
+            font-weight: normal;
+            font-size: calc(10px + (32 - 15) * ((100vw - 320px) / (1600 - 320)));
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .hero-block h3 {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .text-center { text-align: center; margin-left: auto; margin-right: auto; }
+
+        .links {
+            position: relative;
+            z-index: 2;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            padding: 12px 40px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .links a:hover {
+            background-color: #fff;
+            color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- hero block -->
+    <header class="hero-block">
+        
+        <div class="hero-text-container">
+            <h1>What's the Craic!! I'm Bergman </h1>
+            <h2> Web | UI Designer </h2>
+            <h3> I created this website to showcase some of my recent web design work </h3>
+        </div>
+
+        <div class="hero-bg-media">
+            <video src="/exercises/assets/Videos/original.mp4" autoplay loop muted></video>
+        </div>
+        
+        <div class="links">
+            <p><a href="/exercises/page-4.html">Vincent van Gogh</a></p>
+            <p><a href="/exercises/page-5.html">Ireland's Top Five Visitor Attractions</a></p>
+            <p><a href="/exercises/page-6.html">Smooth Smoothies</a></p>
+            <p><a href="/exercises/page-7.html">Digital Product</a></p>
+            <p><a href="/exercises/page-8.html">The Box Model</a></p>
+            <p><a href="/exercises/page-9.html">Web Page With Panels</a></p>
+            <p><a href="/exercises/flexbox-sample.html">Flexbox Sample</a></p>
+            <p><a href="/exercises/page-10.html">Working with Google Fonts</a></p>
+            <p><a href="/exercises/hero-text.html">Hero block with animated text</a></p>
+            <p><a href="/exercises/hero-image.html">Hero Blocks with Image</a></p>
+            <p><a href="/exercises/hero-video.html">Hero Blocks with Video</a></p>
+        </div>
+    </header>
+</body>
+</html>
